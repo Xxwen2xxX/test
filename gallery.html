@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background:url(pngtree-forest-stones-rainforest-jungle-green-nature-background-in-the-rain-image_2183198.jpg);
+            background-size: contain;
+        }
+        .item1 
+        { grid-area: image1; 
+          background-image: url(download\ \(1\).jpg);
+          height: 290px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .item2 {
+             grid-area: image2;
+             background-image: url(download.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: center;
+            }
+        .item3 { 
+            grid-area: image3; 
+            background-image: url(harambe\(1\).jpg);
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .item4 { 
+            grid-area: image4; 
+            background-image: url(harambe\(2\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 290px;
+        }
+        .item5{
+            grid-area: image5;
+            background-image: url(5bef548116b17.image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            'image1 image2 image2 image3'
+            'image1 image2 image2 image3'
+            'image4 image4 image5 image3'
+            'image4 image4 image5 image3'
+            'image4 image4 image5 image3';
+            gap: 10px;
+        }
+
+        .item1:hover{
+            filter: brightness(50%);
+            transform: scale(105%);
+        }
+
+        .item2:hover{
+            filter: brightness(50%);
+            transform: scale(105%);
+        }
+
+        .item3:hover{
+            filter: brightness(50%);
+            transform: scale(105%);
+        }
+
+        .item4:hover{
+            filter: brightness(50%);
+            transform: scale(105%);
+        }
+
+        .item5:hover{
+            filter: brightness(50%);
+            transform: scale(105%);
+        }
+    </style>
+</head>
+<body>
+   <div class="grid-container">
+        <a href="download (1).jpg" class="item1"><div class="item1"></div></a>
+        <a href="download.jpg" class="item2"><div class="item2"></div></a>
+        <a href="harambe(1).jpg" class="item3"><div class="item3"></div></a>
+        <a href="harambe(2).jpg" class="item4"><div class="item4"></div></a>
+        <a href="5bef548116b17.image.jpg" class="item5"><div class="item5"></div></a>
+   </div>
+</body>
+</html>
